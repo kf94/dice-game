@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Lato:100,300,600" rel="stylesheet" type="text/css">
+        <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+
+        <title>Dice Game</title>
+    </head>
+
+    <body>
+        <div class="wrapper clearfix">
+            <div class="player-0-panel">
+                <div class="player-name" id="name-0">Player 1</div>
+                <div class="player-score" id="score-0">0</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-0">0</div>
+                </div>
+            </div>
+
+            <div class="player-1-panel">
+                <div class="player-name" id="name-1">Player 2</div>
+                <div class="player-score" id="score-1">0</div>
+                <div class="player-current-box">
+                    <div class="player-current-label">Current</div>
+                    <div class="player-current-score" id="current-1">0</div>
+                </div>
+            </div>
+
+            <button class="btn-new"><i class="ion-ios-plus-outline"></i>New game</button>
+            <button class="btn-rules"><i class="ion-ios-help-outline"></i>Rules</button>
+            <div class ="in-game-buttons">
+            <button class="btn-roll"><i class="ion-ios-loop"></i>Roll dice</button>
+            <button class="btn-hold"><i class="ion-ios-download-outline"></i>Hold</button>
+            </div>
+            <img src="dice-5.png" alt="Dice" class="dice">
+        </div>
+        <div class="rules-div">
+          <div class="rules">
+          GAME RULES:<br><br>
+
+          -The game has two players and is played round by round until either player reaches a score of 100.<br>
+          -Each turn a player roles a dice, and they can role it as many times as they like.<br>
+          -Each consecutive role is added to the current score.<br>
+          -However If the player roles a one, their current score is set to 0, and they lose their turn.<br>
+          -Once a player feels that they have reached the end of their luck, they can 'HOLD' to keep their current score and end their turn.<br>
+        </div>
+          <button class="btn-got-it"><i class="ion-ios-arrow-thin-left"></i>Got it!</button>
+        </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
